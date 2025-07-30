@@ -5,7 +5,7 @@ const print = std.debug.print;
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
-    const allocator = gpa.allocator();
+    // const allocator = gpa.allocator();
 
     print("Building LoRa WiFi Community website...\n", .{});
 
